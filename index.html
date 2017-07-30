@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>IMAprotection</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="menu.js"></script>
+    <style type="text/css">
+		.Style1 {color: #3D99B7}
+    </style>
+	<script type="text/javascript"> 
+        function iFrameHeight() { 
+			var h = 0; 
+			if(navigator.appName=="Microsoft Internet Explorer" ){
+				if ( !document.all ) { 
+					h = top.document.getElementById('frame').contentdocument.height; 
+					document.getElementById('frame').style.height = h + 'px'; 
+				} else if( document.all ) { 
+					h = top.document.frames('frame').document.body.scrollHeight; 
+					top.document.all.frame.style.height = h + 'px'; 
+				} 
+			} else {
+				h = document.getElementById('frame').style.height = document.getElementById('frame' ).contentDocument.body.offsetHeight+"px";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div id="header">
+		<h1>IMAprotection</h1>
+		<h2 class="gray">Pour <span class="Style1">Une vie sauvage libre</span></h2>
+	</div>
+	
+	<div id="mainMenu1">
+		<ul id="menuList1">
+			<li><a href="pages/accueil.html" class="navText" target="frame">Accueil</a></li>
+			<li><a href="pages/Connaissez-VousLeWWF.html" class="navText" target="frame">Connaissez-Vous le WWF ?</a></li>
+			<li><a href="pages/WWFFrance.html" class="navText" target="frame">Le WWF En France</a></li>
+			<li><a class="actuator">Objectifs</a>
+			  <ul class="menu">
+				<li><a href="pages/Objectifs/Agriculture/index.html" target="frame">Agriculture</a></li>
+				<li><a href="pages/Objectifs/ChangementClimatique/index.html" target="frame">Changement Climatique</a></li>
+				<li><a href="pages/Objectifs/EauxDouces/index.html" target="frame">Eaux Douces</a></li>
+				<li><a href="pages/Objectifs/Forets/index.html" target="frame">For&ecirc;ts</a></li>
+				<li><a href="pages/Objectifs/ModesDeVieDurables/index.html" target="frame">Modes De Vie Durables</a></li>	
+				<li><a href="pages/Objectifs/OceansEtCotes/index.html" target="frame">Oc&eacute;ans Et C&ocirc;tes</a></li>
+				<li><a href="pages/Objectifs/OutreMer/index.html" target="frame">Outre Mer</a></li>
+				<li><a href="pages/Objectifs/PollutionsChimiques/index.html" target="frame">Pollutions Chimiques</a></li>
+			  </ul>
+			</li>
+			<li><a class="actuator">Esp&egrave;ces Menac&eacute;es</a>
+				<ul class="menu">
+					<li><a href="pages/EspecesMenacees/index.html" target="frame">Esp&egrave;ces Menac&eacute;es</a></li>
+					<li><a href="pages/EspecesMenacees/Les10EspecesLesPlusMenacees/index.html" target="frame">Les Plus Menac&egrave;es</a></li>
+					<li><a href="pages/EspecesMenacees/Amphibiens/index.html" target="frame">Amphibiens</a></li>
+					<li><a href="pages/EspecesMenacees/Mammiferes/index.html" target="frame">Mammif&egrave;res</a></li>
+					<li><a href="pages/EspecesMenacees/Oiseaux/index.html" target="frame">Oiseaux</a></li>
+					<li><a href="pages/EspecesMenacees/orchidees/index.html" target="frame">Orchid&eacute;es</a></li>
+					<li><a href="pages/EspecesMenacees/poissonsd'eaudouce/index.html" target="frame">Poissons d'eau douce</a></li>
+				</ul>
+			</li>			
+			<li><a class="actuator">Sensibilisation Et &Eacute;ducation</a>
+				<ul class="menu">
+					<li><a href="pages/SensibilisationEtEducation/index.html" target="frame">&Eacute;ducation &Aacute; L'Environnement</a></li>	
+					<li><a href="pages/SensibilisationEtEducation/EducationALaForet/index.html" target="frame">&Eacute;ducation &Agrave; La For&ecirc;t</a></li>
+					<li><a href="pages/SensibilisationEtEducation/EducationALEau/index.html" target="frame">&Eacute;ducation &Agrave; L'Eau</a></li>
+					<li><a href="pages/SensibilisationEtEducation/CampagnePedagogique/index.html" target="frame">Campagnes P&eacute;dagogiques</a></li>
+				</ul>
+			</li>
+
+			<li><a href="pages/Bibliographie.html" class="navText" target="frame">Bibliographie</a></li>	
+		</ul>     
+	</div>
+	
+	<div id="content">
+		<div id="colOne">
+			<iframe id="frame" name="frame" src="pages/accueil.html" width="100%" onload="iFrameHeight();" frameborder="no" marginwidth="15" marginheight="0" height="" scrolling="no">
+			</iframe>
+		</div>
+	</div>
+</body>
+</html>

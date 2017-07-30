@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Document sans nom</title>
+	<link href="../../../style.css" rel="stylesheet" type="text/css" />
+	<script language="javascript">
+		function navigation(){
+			if(document.formulaire.url.value!="Vide")	{
+				document.location=document.formulaire.url.value;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<h2>la Liste rouge des reptiles et amphibiens de m&Eacute;tropole</h2>
+	<p>D&rsquo;apr&egrave;s la Liste rouge des esp&egrave;ces menac&eacute;es en France, <strong><u>une esp&egrave;ce de reptiles et une esp&egrave;ce d&rsquo;amphibiens sur cinq risquent de dispara&icirc;tre du territoire m&eacute;tropolitain.</u></strong></p>
+	<p>R&eacute;alis&eacute; sur la base des crit&egrave;res de r&eacute;f&eacute;rence de l&rsquo;UICN, ce premier volet de la Liste rouge nationale dresse un bilan de la situation des amphibiens et reptiles de m&eacute;tropole et met en &eacute;vidence les menaces multiples qui p&egrave;sent sur ces esp&egrave;ces.</p>
+	<p>Pour les &eacute;valuations, le Comit&eacute; fran&ccedil;ais de l&rsquo;UICN et le Mus&eacute;um national d&rsquo;Histoire naturelle ont travaill&eacute; en partenariat avec la Soci&eacute;t&eacute; herp&eacute;tologique de France. Les r&eacute;sultats montrent que 7 esp&egrave;ces de reptiles sur 37 et 7 esp&egrave;ces d&rsquo;amphibiens sur 34 sont actuellement menac&eacute;es sur le territoire m&eacute;tropolitain. Ces esp&egrave;ces sont des indicateurs de l&rsquo;&eacute;tat de sant&eacute; de plusieurs de nos milieux naturels. Sans une action efficace, ces chiffres pourraient   doubler dans les ann&eacute;es &agrave; venir.</p>
+	<ul>
+	  <li><a href="../Reptiles/lalisterougefrancaise.html">La liste rouge des reptiles</a></li>
+	  <li><a href="lalisterougefrancaise.html">La liste rouge des amphibiens</a>  </li>
+	</ul>
+	
+	<form name="formulaire" method="POST">
+	  <div align="center">
+		<select size="1" name="url" onChange="navigation()">
+		  <option value="Vide">Aller vers...</option>
+		  <option value="../../accueil.html">... accueil</option>
+		  <option value="../index.html">... Esp&egrave;ces menac&eacute;es</option>
+		  <option value="../Mammiferes/index.html">... Mammif&egrave;res</option>
+		  <option value="../Oiseaux/index.html">... Oiseaux</option>
+		  <option value="../Orchidees/index.html">... Orchid&eacute;es</option>
+		  <option value="../poissonsd'eaudouce/index.html">... Poissons d'eau douce</option>
+		  <option value="Les10EspecesLesPlusMenacees/index.html">... Les 10 esp&egrave;ces les plus menac&eacute;es</option>
+		</select>
+	  </div>
+	</form>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<div id="footer">
+	<p>Site enti&egrave;rement construit par LEROY Vanessa et OUMAROU Abdourahamane.</p>
+	</div>
+</body>
+</html>
